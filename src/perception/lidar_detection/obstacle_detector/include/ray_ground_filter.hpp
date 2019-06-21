@@ -52,12 +52,12 @@ class RayGroundRemove
 {
 	private:
 	double sensor_height_ = 1.7;//meters
-	double general_max_slope_ = 3.0;//degrees
+	double general_max_slope_ = 10.0;//degrees
 	double local_max_slope_ = 5.0;//degrees
 	double radial_divider_angle_ = 0.1;//distance in rads between dividers
 	double concentric_divider_distance_ = 0.01;//distance in meters between concentric divisions
 	double min_height_threshold_ = 0.05;;//minimum height threshold regardless the slope, useful for close points
-	double clipping_height_ = 0.2; //the points higher than this will be removed from the input cloud.
+	double clipping_height_ = 0.5; //the points higher than this will be removed from the input cloud.
 	double min_point_distance_ = 1.85;//minimum distance from the origin to consider a point as valid
 	double reclass_distance_threshold_ = 0.2;//distance between points at which re classification will occur
 
